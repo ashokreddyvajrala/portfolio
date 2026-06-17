@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +7,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div class="progress-bar"></div>
 
   <nav>
     <h2>Ashok Reddy</h2>
@@ -20,6 +21,7 @@
 
   <header class="hero">
     <div class="hero-text">
+
       <div class="system-status">
         <span>● systemctl status ashok-portfolio.service</span>
         <span>● Active: running (excellent)</span>
@@ -27,19 +29,49 @@
 
       <h1>Hello,<br><span>Ashok here!</span> 👋</h1>
 
-      <p>I’m an IT Systems Administrator focused on Linux, VICIdial, Asterisk, VoIP systems, automation, troubleshooting, and production support.</p>
+      <p>
+        I’m an IT Systems Administrator focused on Linux,
+        VICIdial, Asterisk, VoIP systems, automation,
+        troubleshooting, and production support.
+      </p>
 
-      <p>I enjoy fixing real system issues, improving workflows, and building reliable technical solutions for business operations.</p>
+      <p>
+        I enjoy fixing real system issues, improving workflows,
+        and building reliable technical solutions for business operations.
+      </p>
 
       <div class="hero-badges">
         <span>▻ OS: LINUX</span>
         <span>▣ FOCUS: VOIP • AUTOMATION • SYSTEMS</span>
         <span>● STATUS: ONLINE</span>
       </div>
+
+      <div class="dashboard">
+        <div>
+          <span>OS</span>
+          <strong>LINUX</strong>
+        </div>
+
+        <div>
+          <span>VOIP</span>
+          <strong>ASTERISK</strong>
+        </div>
+
+        <div>
+          <span>PLATFORM</span>
+          <strong>VICIDIAL</strong>
+        </div>
+
+        <div>
+          <span>FOCUS</span>
+          <strong>INFRASTRUCTURE</strong>
+        </div>
+      </div>
+
     </div>
 
     <div class="hero-image">
-      <img src="images/profile.png" alt="Ashok Reddy Vajrala">
+      <img src="profile.png" alt="Ashok Reddy Vajrala">
 
       <div class="image-actions">
         <a href="resume.pdf" download>▧ Resume</a>
@@ -146,6 +178,16 @@
   <footer>
     <p>© 2026 Ashok Reddy Vajrala</p>
   </footer>
+
+  <script>
+    window.addEventListener("scroll", () => {
+      const winScroll = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+
+      document.querySelector(".progress-bar").style.width = scrolled + "%";
+    });
+  </script>
 
 </body>
 </html>
