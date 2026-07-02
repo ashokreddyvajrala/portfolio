@@ -8,6 +8,16 @@
 </head>
 
 <body>
+  <div class="boot-loader" id="bootLoader">
+    <div class="boot-box">
+      <p>Booting Ashok Portfolio...</p>
+      <p>Loading Linux modules...</p>
+      <p>Loading Cloud stack...</p>
+      <p>Loading DevOps roadmap...</p>
+      <p class="boot-done">Done.</p>
+    </div>
+  </div>
+
   <div class="progress-bar"></div>
 
   <nav>
@@ -33,9 +43,7 @@
 
       <h1>Hello,<br><span>I'm Ashok 👋</span></h1>
 
-      <p class="hero-line">
-        Linux • Cloud • DevOps • Infrastructure • Python
-      </p>
+      <p class="hero-line">Linux • Cloud • DevOps • Infrastructure • Python</p>
 
       <p>
         Building reliable Linux infrastructure, cloud platforms, automation,
@@ -88,7 +96,30 @@
     </div>
   </header>
 
+  <section id="now" class="terminal-section">
+    <div class="section-prompt">ashok@linux:~/now$</div>
+    <h2>Now</h2>
+
+    <div class="now-grid">
+      <div class="now-card">
+        <h3>Currently Building</h3>
+        <p>ChanOps.ai — an AI-powered Infrastructure and DevOps assistant.</p>
+      </div>
+
+      <div class="now-card">
+        <h3>Current Focus</h3>
+        <p>Linux → Cloud → DevOps → Infrastructure Automation</p>
+      </div>
+
+      <div class="now-card">
+        <h3>Technical Direction</h3>
+        <p>Python automation, AWS fundamentals, production reliability, and AI operations.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="about">
+    <div class="section-prompt">ashok@linux:~/about$</div>
     <h2>About Me</h2>
 
     <p>
@@ -117,7 +148,59 @@
     </p>
   </section>
 
+  <section id="quick-facts">
+    <div class="section-prompt">ashok@linux:~/facts$</div>
+    <h2>Quick Facts</h2>
+
+    <div class="facts-grid">
+      <div>Master’s in Computer Science</div>
+      <div>Linux Infrastructure Foundation</div>
+      <div>Production Support Experience</div>
+      <div>Python Automation</div>
+      <div>Cloud & DevOps Direction</div>
+      <div>Building ChanOps.ai</div>
+    </div>
+  </section>
+
+  <section id="stack-dashboard">
+    <div class="section-prompt">ashok@linux:~/stack$</div>
+    <h2>Stack Dashboard</h2>
+
+    <div class="stack-bars">
+      <div>
+        <span>Linux</span>
+        <div class="bar"><i style="width: 90%"></i></div>
+      </div>
+
+      <div>
+        <span>Python</span>
+        <div class="bar"><i style="width: 78%"></i></div>
+      </div>
+
+      <div>
+        <span>SQL</span>
+        <div class="bar"><i style="width: 70%"></i></div>
+      </div>
+
+      <div>
+        <span>Networking</span>
+        <div class="bar"><i style="width: 66%"></i></div>
+      </div>
+
+      <div>
+        <span>Cloud</span>
+        <div class="bar"><i style="width: 45%"></i></div>
+      </div>
+
+      <div>
+        <span>DevOps</span>
+        <div class="bar"><i style="width: 42%"></i></div>
+      </div>
+    </div>
+  </section>
+
   <section id="skills">
+    <div class="section-prompt">ashok@linux:~/skills$</div>
     <h2>Technical Skills</h2>
 
     <div class="skill-grid">
@@ -187,6 +270,7 @@
   </section>
 
   <section id="projects">
+    <div class="section-prompt">ashok@linux:~/projects$</div>
     <h2>Featured Projects</h2>
 
     <div class="project-card hero-project">
@@ -198,11 +282,16 @@
           An AI-powered Infrastructure and DevOps assistant focused on Linux,
           Cloud, Automation, and Production Support.
         </p>
-        <p>
-          The goal is to support troubleshooting, learning, documentation, and
-          operational guidance across Linux, AWS, Docker, Kubernetes, DevOps,
-          and infrastructure workflows.
-        </p>
+
+        <div class="chanops-status">
+          <span>✓ Linux</span>
+          <span>✓ Python</span>
+          <span>✓ Knowledge Base</span>
+          <span>○ AWS</span>
+          <span>○ Docker</span>
+          <span>○ Kubernetes</span>
+          <span>○ AI Agents</span>
+        </div>
       </div>
     </div>
 
@@ -227,11 +316,6 @@
           troubleshooting, documentation, reporting, data checks, and process
           reliability.
         </p>
-        <p>
-          Focused on reducing manual errors, improving verification steps, and
-          supporting repeatable business operations through structured technical
-          processes.
-        </p>
       </div>
     </div>
 
@@ -243,15 +327,12 @@
           Used Python, SQL, reporting, data processing, and automation concepts
           to support technical workflows and improve operational efficiency.
         </p>
-        <p>
-          I also write technical blogs related to Python, Data Analysis, and
-          data-focused problem solving.
-        </p>
       </div>
     </div>
   </section>
 
   <section id="experience">
+    <div class="section-prompt">ashok@linux:~/experience$</div>
     <h2>Experience</h2>
 
     <div class="experience-card">
@@ -278,40 +359,51 @@
         <span>Troubleshooting</span>
         <span>Documentation</span>
         <span>Operational Reliability</span>
-        <span>Cross-functional Collaboration</span>
       </div>
     </div>
   </section>
 
   <section id="training">
-  <h2>Professional Training</h2>
+    <div class="section-prompt">ashok@linux:~/training$</div>
+    <h2>Professional Training</h2>
 
-  <div class="project-card">
-    <div class="project-number">01</div>
-    <div>
-      <h3>Cloud DevOps Competency – Intel®</h3>
-      <p>
-        Completed training covering cloud computing fundamentals, DevOps principles,
-        Linux environments, automation concepts, containerization, CI/CD fundamentals,
-        and modern software delivery practices.
-      </p>
+    <div class="project-card">
+      <div class="project-number">01</div>
+      <div>
+        <h3>Cloud DevOps Competency – Intel®</h3>
+        <p>
+          Completed training covering cloud computing fundamentals, DevOps principles,
+          Linux environments, automation concepts, containerization, CI/CD fundamentals,
+          and modern software delivery practices.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div class="project-card">
-    <div class="project-number">02</div>
-    <div>
-      <h3>Data Science & Machine Learning – ExcelR</h3>
-      <p>
-        Professional training focused on Python, SQL, Data Analysis, Data Science,
-        Machine Learning fundamentals, data preprocessing, visualization, and
-        predictive modeling concepts.
-      </p>
+    <div class="project-card">
+      <div class="project-number">02</div>
+      <div>
+        <h3>Data Science & Machine Learning – ExcelR</h3>
+        <p>
+          Professional training focused on Python, SQL, Data Analysis, Data Science,
+          Machine Learning fundamentals, data preprocessing, visualization, and
+          predictive modeling concepts.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section id="philosophy">
+    <div class="terminal-quote">
+      <p>$ cat philosophy.txt</p>
+      <h2>Build reliable systems.</h2>
+      <h2>Automate repetitive work.</h2>
+      <h2>Keep learning.</h2>
+      <h2>Solve real problems.</h2>
+    </div>
+  </section>
 
   <section id="education">
+    <div class="section-prompt">ashok@linux:~/education$</div>
     <h2>Education</h2>
 
     <h3>Master of Science in Computer Science</h3>
@@ -320,19 +412,39 @@
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <div class="section-prompt">ashok@linux:~/contact$</div>
+    <h2>Contact Terminal</h2>
 
-    <p>Email: <a href="mailto:ashokreddyvajrala2001@gmail.com">ashokreddyvajrala2001@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ashok-reddy-vajrala-699b67225/" target="_blank">Ashok Reddy Vajrala</a></p>
-    <p>GitHub: <a href="https://github.com/ashokreddyvajrala" target="_blank">github.com/ashokreddyvajrala</a></p>
-    <p>Portfolio: <a href="https://ashokreddyvajrala.github.io/portfolio/" target="_blank">ashokreddyvajrala.github.io/portfolio</a></p>
+    <div class="contact-terminal">
+      <p><span>$ whoami</span></p>
+      <h3>Ashok Reddy Vajrala</h3>
+
+      <p><span>$ focus</span></p>
+      <p>Linux • Cloud • DevOps • Infrastructure • Python</p>
+
+      <p><span>$ links</span></p>
+      <p>Email: <a href="mailto:ashokreddyvajrala2001@gmail.com">ashokreddyvajrala2001@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ashok-reddy-vajrala-699b67225/" target="_blank">Ashok Reddy Vajrala</a></p>
+      <p>GitHub: <a href="https://github.com/ashokreddyvajrala" target="_blank">github.com/ashokreddyvajrala</a></p>
+      <p>Portfolio: <a href="https://ashokreddyvajrala.github.io/portfolio/" target="_blank">ashokreddyvajrala.github.io/portfolio</a></p>
+
+      <a class="terminal-resume" href="./resume.pdf" download>$ download resume.pdf</a>
+    </div>
   </section>
 
   <footer>
+    <p>ashok@linux:~$ exit</p>
+    <p>Session closed successfully.</p>
     <p>© 2026 Ashok Reddy Vajrala • Linux • Cloud • DevOps • Infrastructure • Python</p>
   </footer>
 
   <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("bootLoader").classList.add("hide-loader");
+      }, 900);
+    });
+
     window.addEventListener("scroll", () => {
       const winScroll = document.documentElement.scrollTop;
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
